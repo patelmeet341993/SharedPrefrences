@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/design_default_color_primary"></RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/my_icon"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:id="@+id/txt"
+        android:layout_centerInParent="true"
+        android:text="FRIENDLY IT SOLUTION"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Developed By FIS"
+        android:textSize="18dp"
+        android:padding="8dp"
+        android:id="@+id/dev"
+        android:gravity="center"
+        />
+
+
+    <RelativeLayout
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/back"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+
+        <LinearLayout
+            android:background="@drawable/back1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/lin1"
+            android:orientation="horizontal"
+           >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_uid"
+                android:tint="@color/design_default_color_primary"
+                android:padding="8dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter userid"
+                android:id="@+id/etid"
+                android:paddingLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/back2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lin1"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_password"
+                android:padding="10dp"
+                />
+
+            <EditText
+
+                android:background="@drawable/back3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter password"
+                android:id="@+id/etpass"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="LOGIN"
+            android:id="@+id/btnlogin"
+            android:textSize="18dp"
+            android:textColor="@color/black_off"
+            android:background="@drawable/butnclick_primery"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/butnclick_primery"
+        android:text="Register Here!"
+
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/dev"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
